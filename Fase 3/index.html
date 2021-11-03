@@ -1,267 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos.css">
+</head>
 
 <body>
   <header>
     <img src="Imagenes/Logo_Universidad.JPG" alt="Logo" height="50px" />
     <h2 style="display: inline">Universidad del Estado</h2>
-    <h1 style="display: inline">Diseno de Sitios Web</h1>
+    <h1 style="display: inline">Aprende Diseño de Sitios Web</h1>
     <h2 style="color: darkslateblue">Usando Flexbox, Lista & Enlaces</h2>
-    <hr />
   </header>
-  <div class="divmenu">
-    <h3>Menu Principal</h3>
-    <nav>
-      <ul style="font-family: Helvetica" ;>
-        <li>Inicio</li>
-        <li>
-          Temas
-          <ul style="list-style-type:circle; font-family: Helvetica;">
-            <li>Tema 1</li>
-            <li>Tema 2</li>
-          </ul>
-        </li>
+  <hr />
+  <nav>
+    <ul id=menupg>
+      <li><a>Inicio</a></li>
+      <li><a>Temas</a>
+        <ul>
+          <li><a>Flexbox</a></li>
+          <li><a>Listas & Enlaces</a></li>
+        </ul>
+      </li>
 
-        <li>
-          Recursos Digitales
-          <ul style="list-style-type:circle; font-family: Helvetica;">
-            <li>Recurso 1</li>
-            <li>Recurso 2</li>
-          </ul>
-        </li>
-
-        <li>
-          Aprendizaje
-          <ul style="list-style-type:circle; font-family: Helvetica;">
-            <li>Actividad 1</li>
-            <li>Actividad 2</li>
-          </ul>
-        </li>
-
-        <li>Acerca de</li>
+      <li><a>Recursos Digitales</a></li>
+      <ul>
+        <li><a>Flexbox</a></li>
+        <li><a>Listas & Enlaces</a></li>
       </ul>
-    </nav>
-  </div>
-  <section>
-    <div class="propdiv">
+      <li><a>Aprendizaje</a>
+        <ul>
+          <li><a>Aprendizaje 1</a> </li>
+          <li><a>Aprendizaje 2</a> </li>
+        </ul>
+      </li>
+      <li><a>Autor</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id=proposito>
       <h2 style="color: black">Proposito del Sitio</h2>
-      <p style="font-family: Helvetica;">
+      <p>
         Como parte de la Estrategia educativa de la Universidad en Tecnologias
         de Informacion (TI), presentamos un entrenamiento
         basico y avanzado del uso de los siguientes elementos en el Diseno de paginas Web:
       <ul style="list-style-type: square; font-family: Helvetica;">
-        <li> <b>Flexbox</b></li>
-        <li> <b>Listas</b> </li>
-        <li> <b>Enlaces</b> </li>
-      </ul>
-      </p>
-      <p style="font-family: Helvetica;">
-        En los items descriptivos a continuacion, encontraran los enlaces que llevaran a conocer que son estos
-        elementos, para que se usan en la creacion de Paginas Web, las caracteristicas que incluyen, ejercicios y
-        practicas de uso de los elementos mencionados
-      </p>
-    </div>
-    <div style="clear: both;"></div>
+        </p>
+    </section>
     <hr>
-    <article>
-      <h2 style="color: darkblue;"> Flexbox </h2>
-      <img style="position: relative; right: 50px; left: 400px;" src="Imagenes/flexbox.png" alt="Flexbox"
-        height="200px">
-      <h4
-        style="position: relative;right: 50px; left: 450px; font-style: normal; font-size: small; font-family: Arial;">
-        Imagen tomada de https://sharkcoder.com/layout/flexbox </h4>
-      <p style="justify-content: space-evenly;font-family: Arial;">El nombre largo es Flexible Box Layout, pero se
-        acorta en "Flexbox". Este elemento, es de
-        gran utilidad en la actualidad en el diseno de Paginas Web; ya que permite de
-        manera dinamica, organizar dentro de un contenedor los elementos, productos u otro item que sera presentados
-        en la pagina en Desarrollo. Esto permite, que sean organizados sin requerir, mayor codigo y se auto-ajusta a los
-        cambios en tamano
-        que puedan suceder al ampliarse o acortarse la pagina Web donde se presente. Es decir, que facilita alinear,
-        llenar, distribuir el espacio
-        entre los elementos que se incluyen dentro de un contenedor, usando anchos y alturas flexibles, siendo asi una
-        gran
-        herramienta para diseno responsivo, y evita el uso de "float" y/o "position", al momento de ordenar, centrar los
-        elementos
-        que deben ir en una pagina web.
+    <section class=secart>
+      <article>
+        <div class=divart1>
+          <h2 style="color: darkblue;"> Flexbox </h2>
+          <img src="Imagenes/flexbox.png" alt="Flexbox" height="100px">
+          <h4 style="font-style: normal; font-size:smaller; font-family: Arial;">
+            Imagen tomada de https://sharkcoder.com/layout/flexbox </h4>
+          <p style="justify-content: space-evenly; font-size: small; font-family: Arial;"> Permite de
+            manera dinamica, organizar dentro de un contenedor los items, productos que sera presentados
+            en la pagina en Desarrollo sin requerir, mayor codigo y es auto-ajustable a cambios en la pagina
+        </div>
+      </article>
+      <article>
+        <div class=divart2>
+          <h2 style="color: darkblue;"> Listas </h2>
+          <img src="Imagenes/listas_imagen.jpg" alt="Listas" height="100px">
+          <h4 style="font-style: normal; font-size: smaller; font-family: Arial;">
+            Imagen tomada de https://data-flair.training/blogs/html-lists/ </h4>
+          <p style="justify-content: space-evenly; font-size: small; font-family: Arial;">
+            Permiten crear conjuntos de elementos para presentarlos en forma de lista en una pagina Web.
+          </p>
+        </div>
+      </article>
+      <article>
+        <div class=divart3>
+          <h2 style="color: darkblue;"> Enlaces </h2>
+          <image src="Imagenes/Enlace_Imagen.JPG" alt="Enlaces" height="100px">
+            <h4 style="font-style: normal; font-size: smaller; font-family: Arial;">
+              Imagen tomada de https://www.agetec.org/ageteca/hipertexto_cultura.pdf </h4>
+            <p style="justify-content: space-evenly;font-size: small; font-family: Arial;">
+              Los enlaces son el corazon y la parte vital en el lenguaje HTML. Son la razon de la existencia de la
+              Internet
+              o
+              la WWW (World Wide Web).
+            </p>
+        </div>
+      </article>
+      <aside>
+        <iframe
+          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Ffacebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+          width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+          allowfullscreen="true"
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
-        Un Flexbox esta compuesto por dos items:
-      <ul style="font-family: Arial;">
-        <li><b>Contenedor:</b> Que como su nombre lo indica contendra los elementos que seran incorporados y mostrados
-          en el.
-        </li>
-        <li><b>Items:</b> Son cada uno de los elementos que contendra el Contenedor, se les denomina tambien como
-          elementos hijos</li>
-      </ul>
-
-      <p style="justify-content: space-evenly;font-family: Arial;">Estas son las propiedades disponibles de los
-        Flexboxes:</p>
-
-      <ul style="font-family: Arial;">
-        <li><b>Display-flex:</b> Establece el contenedor como un contenedor Flexible y permite que los hijos dentro del
-          contenedor
-          sean flexibles tambien.
-        </li>
-        <li><b>Justify-Content:</b> Controla la alineacion horizontal de los elementos dentro del contenedor flexible
-        </li>
-        <li><b>Align-items:</b> Contrla la alineacion vertical de los elementos dentro del contenedor flexible </li>
-        <li><b>Flex-direction:</b> Especifica la direccion de los elementos flexibles </li>
-      </ul>
-
-      <h3>Referencias Bibliograficas</h3>
-      <ul style="list-style-type: square;">
-        <li>Attardi, J. (2020). Flexbox. In Modern CSS (pp. 205-228). Apress, Berkeley, CA.</li>
-        <li>Chris.Abril 8, 2013. A complete Guide to Flexbox. Disponible en:
-          https://css-tricks.com/snippets/css/a-guide-to-flexbox/.</li>
-        <li>MDN Web Docs. Septiembre 3, 2021. Flexbox. Disponible en:
-          https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox. </li>
-        <li>Martinez, C. Diciembre 21, 2017. Ventajas para comenzar a utilizar Flexbox. Disponible en:
-          https://blog.ida.cl/desarrollo/ventajas-utilizar-flexbox/. </li>
-      </ul>
-      </p>
-    </article>
-    <hr>
-    <article>
-      <h2 style="color: darkblue;"> Listas </h2>
-      <img style="position: relative; right: 50px; left: 430px;" src="Imagenes/listas_imagen.jpg" alt="Listas"
-        height="200px">
-      <h4
-        style="position: relative;right: 50px; left: 450px; font-style: normal; font-size: small; font-family: Arial;">
-        Imagen tomada de https://data-flair.training/blogs/html-lists/ </h4>
-      <p style="justify-content: space-evenly;font-family: Arial;">
-        Permiten crear conjuntos de elementos para presentarlos en forma de lista en una pagina Web. Los elementos que
-        hacen parte
-        de una lista, son precedidos por un numero, letra, guion, circulo, cuadrado, que los describe como parte del
-        listado que se quiere mostrar.
-
-        Existen tres tipos de Listas, que pueden ser creadas en HTML:
-
-      <ul style="font-family: Arial;">
-        <li><b>Listas Ordenadas:</b> Nos muestran los elementos en orden. Este ultimo se representa por medio de una
-          numeracion; ya sea
-          usando numeros o letras del alfabeto. En otras palabras, cada elemento, sera precedido por un numero o una
-          letra.
-        </li>
-        <li><b>Listas Desordenadas:</b> Muestran los elementos, sin ningun tipo de orden. Es decir, que cada uno de los
-          elementos que hacen
-          parte de la lista, seran precedidos por una vineta o caracter, que puede ser un circulo, un cuadrado, un
-          punto, entre otras opciones
-        </li>
-        <li><b>Lista de Definiciones:</b> Sirven para presentar una lista que incluye una palabra o termino y su
-          definicion. Se suelen emplear
-          para presentar definiciones de terminos, estilo diccionario. La ventaja que ofrece, este tipo de lista, es que
-          en su estructuracion, el
-          visitante del sitio web, tendra claro, el termino y su definicion. </li>
-      </ul>
-      </p>
-      <p style="justify-content: space-evenly;font-family: Arial;">
-        Un caso especial de las Listas, son las que se conocen como "Anidadas", que es simplemente, la opcion de que una
-        lista incluya otras listas. La caracteristica
-        mas importante, de este caso, es que pueden ser listas anidadas de las tres previamente explicadas: Ordenada,
-        desordenada y Definida.
-        <br><br>
-        Las Listas Ordenadas se definen dentro de las etiquetas: "ol" para abrir y "/ol" para cerrar. <br><br>
-        Las Listas Desordenadas se definen dentro de las etiquetas: "ul" para abrir "/ul" para cerrar. <br><br>
-        Las Listas Definidas se enmarcan dentro de las etiquetas: "dl" para abrir y "/ul" para cerrar. <br><br><br>
-
-        Para cualquiera de las etiquetas a usar, recordemos que es indispensable incluirlas dentro de los caracteres
-        <b>"<>"</b>.
-
-      <h3>Referencias Bibliograficas</h3>
-      <ul style="list-style-type: square;">
-        <li> Delgado, H. Julio 9, 2021. Learning Web Design. HTML Lists - Wtihout unordered ul, order ol, and definition
-          dl. Disponible en: https://disenowebakus.net/en/lists-html.
-        </li>
-        <li> Lemay, L. (1995). Web publishing with HTML in a week. Sams. </li>
-        <li> Manual Web. (2021). Listas HTML. Disponible en: http://www.manualweb.net/html/listas-html/. </li>
-        <li> Desarrolladoresweb.org. Julio 12, 2019. Listas en HTML - Como crear y poner Vinetas. Disponible en:
-          https://desarrolladoresweb.org/html/listas-en-html/. </li>
-      </ul>
-      </p>
-    </article>
-    <hr>
-    <article>
-      <h2 style="color: darkblue;"> Enlaces </h2>
-      <img style="position: relative; right: 50px; left: 500px;" src="Imagenes/Enlace_Imagen.JPG" alt="Enlaces"
-        height="200px">
-      <h4
-        style="position: relative;right: 50px; left: 400px; font-style: normal; font-size: small; font-family: Arial;">
-        Imagen tomada de https://www.agetec.org/ageteca/hipertexto_cultura.pdf </h4>
-      <p style="justify-content: space-evenly;font-family: Arial;">
-        Los enlaces son el corazon y la parte vital en el lenguaje HTML. Son la razon de la existencia de la Internet o
-        la WWW (World Wide Web). De manera general
-        este elemento en conjunto con las otras funcionalidades disponibles en HTML, son los que permiten a un usuario
-        ir de un documento a otro, de una pagina a otra, de
-        un sitio a otro, con solo dar "click" en el enlace referenciado en la pagina Web.
-        <br>
-        La Funcionalidad basica de un enlace, es hacer referencia desde un documento HTML a otro recurso, que puede ser,
-        como lo hemos mencionado previamente,
-        otro documento. En otras palabras, un enlace define una relacion entre dos (2) recursos en la web.
-        <br>
-        Un Enlace esta compuesto por dos puntas, denominadas anclas (anchors en ingles), y una direccion. El enlace
-        comienza en el ancla fuente u origen y apunta hacia
-        el ancla destino. Este ultimo puede ser: una imagen, un video, un programa, un documento HTML, una pagina web.
-        <br>
-        Las Etiquetas que hay disponibles para referenciar o enlazar a otros recursos en la Web son: <br>
-
-      <ul style="font-family: Arial;">
-        <li><b>Etiqueta a:</b> Se usa para insertar enlaces dentro del contenido de un documento. Proporciona a los
-          creadores del sitio Web, el mecanismo
-          para redigir los usuarios o para recomendarles, otro recurso disponible donde pueden encontrar mayor
-          informacion sobre el tema descrito en la pagina consultada.
-        </li>
-        <li><b>Enlace de Correo (email):</b> Este tipo de enlace, en particular, no se usa para llegar a un nuevo
-          recurso; sino para, enviar mensajes usando el correo electronico, a la cuenta Especifica
-          referida en el enlace. Se identifica, porque usan la palabra "mailto".
-        </li>
-        <li><b>Elemento Link:</b> Este tipo de enlace es muy particular, porque, es usado para proporcionar informacion
-          relacional acerca del documento HTML. Por lo anterior, es
-          declarado en "head". Las variadas relaciones que este elemento puede establecer, dependen principalmente del
-          valor del atributo "rel". Los casos de uso
-          mas comunes, permiten a traves de este elemento la definicion de la estructura del sitio Web, proporcionar
-          versiones alternativas del documento o apunta a recursos externos con informacion de "estilo" para el
-          documento. </li>
-        <li><b>Enlazando Fragmentos:</b> Es un caso especial, que permite enlazar a un fragmento especifico en otro
-          documento. Para que esto sea posible
-          es requerido agregar un atributo de "id" al parrafo al que se quiere enlazar. Luego de esto, en el documento
-          HTML, donde se quiere realizar el enlace al fragmento, se debe
-          usar el elemento "a" incluyendo la referencia "id", previamente definida </li>
-      </ul>
-      <br>
-      </p>
-      <p style="justify-content: space-evenly;font-family: Arial;">
-        A los enlaces, tambien se les conoce como "hipervinculos" (hyperlinks en ingles), y es importante destacar que
-        el uso de este elemento es el que ha
-        permitido el desarrollo y auge de la Web. Ya que, es a traves de los enlaces, como cada uno de nosotros, podemos
-        ir de un sitio a otro, buscar referencias,
-        enlazar investigaciones, documentos; es decir, facilita la busqueda de informacion, lo que antes podia tomar
-        dias, hoy lo podemos hacer en cuestion de minutos.
-
-      <h3>Referencias Bibliograficas</h3>
-      <ul style="list-style-type: square;">
-        <li> Manual Web. (2021). Enlaces HTML. Disponible en: http://www.manualweb.net/html/enlaces-html/. </li>
-        <li> Delgado, H. Julio 9, 2021. HTML Links a tags - Hyperlinks, href, target blank. Recuperado de:
-          https://disenowebakus.net/en/hyperlinks-html. </li>
-        <li> Ponce, D. (s.f.). Links in HTML. Disponible en: https://www.htmlquick.com/tutorials/links.html. </li>
-        <li> World Wide Web Consortium. (1999). HTML 4.01 specification. </li>
-      </ul>
-      </p>
-    </article>
-    <hr>
-    <article>
-      <h2 style="color: darkblue;"> Mockup Propuesto </h2>
-      <img style="position: relative; right: 50px; left: 400px;" src="Imagenes/mockup_image.JPG" alt="Mockup"
-        width="500px" height="500px">
-      <br>
-      <a style="position: relative; right: 50px; left: 530px; font-family: Verdana;"
-        href="https://app.moqups.com/ue7crK9nbn/view/page/a3780764b"> Click aqui para ir al visor de Mockup </a>
-    </article>
-    <hr>
-  </section>
+      </aside>
+    </section>
+  </main>
+  <hr>
   <footer style="text-align: right">
     e-mail: <b>octa17_gmun@outlook.com</b><br>
     skype: <b>octa17_gmun</b><br />
-    Fecha Ultima actualizacion: <b>Septiembre 29 - 2021</b><br />
+    Fecha Ultima actualizacion: <b>Noviembre 2 - 2021</b><br />
   </footer>
 </body>
 

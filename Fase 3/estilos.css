@@ -1,0 +1,125 @@
+h1 {
+    text-align: center;
+    font-family: Verdana;
+    color: midnightblue;
+    padding-left: 2em;
+  }
+
+  h2 {
+    text-align: center;
+    font-family: "Lucida Sans Regular";
+    font-size: 1em;
+    color: grey;
+  }
+
+  h3 {
+    text-align: center;
+    font-family: Arial;
+    font-size: medium;
+  }
+  
+  .secart {
+       display: grid;
+       column-gap: 1em;
+       grid-template-columns: 1fr 1fr 1fr 1fr;
+              
+  }
+  
+  .divart1 {
+       display: grid;
+       row-gap: 0;
+       grid-template-columns: 1fr;
+       background-color: mediumturquoise;
+       border: gray;
+       border-style: ridge;
+  }
+
+  .divart2 {
+        display: grid;
+        row-gap: 0;
+        grid-template-columns: 1fr;
+        background-color: mediumpurple;
+        border:gray;
+        border-style: ridge;
+        
+  }
+
+  .divart3 {
+        display: grid;
+        row-gap: 0;
+        grid-template-columns: 1fr;
+        background-color: lemonchiffon;
+        border:gray;
+        border-style:ridge;
+  }
+
+  
+  #menupg  {
+    list-style: none inside;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+  }
+  
+  #menupg li {
+    display: block;
+    position: relative;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #24af15;
+    
+  }
+
+  #menupg li a {
+
+    display: block;
+    padding: 0;
+    text-decoration: none;
+    width: 200px;
+    line-height: 35px;
+    color: #ffffff;
+  }
+
+  #menupg li li a {
+    font-size: 80%;
+}
+
+
+  #menupg li:hover {
+    background: grey;
+}
+
+  #menupg ul {
+    position: absolute;
+    padding: 0;
+    left: 0;
+    display: none;
+    
+   
+}
+
+  #menupg li:hover ul ul {
+    display: none;
+}
+
+  #menupg li:hover ul {
+    display: block;
+}
+
+  #menupg li li:hover ul {
+    display: block;
+    margin-left: 200px;
+    margin-top: -35px;
+    
+}
+
+#proposito {
+
+    background-color: lightseagreen;
+    margin: 10%;
+    font-family: Helvetica;
+    font-size: medium;
+    overflow: hidden;
+
+}
