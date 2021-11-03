@@ -32,6 +32,7 @@ h1 {
        background-color: mediumturquoise;
        border: gray;
        border-style: ridge;
+       height: 80%;
   }
 
   .divart2 {
@@ -41,6 +42,7 @@ h1 {
         background-color: mediumpurple;
         border:gray;
         border-style: ridge;
+        height: 80%;
         
   }
 
@@ -51,6 +53,7 @@ h1 {
         background-color: lemonchiffon;
         border:gray;
         border-style:ridge;
+        height: 80%;
   }
 
   .imgflex {
