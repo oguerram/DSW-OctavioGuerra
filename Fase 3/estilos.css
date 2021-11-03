@@ -53,6 +53,23 @@ h1 {
         border-style:ridge;
   }
 
+  .imgflex {
+    position: relative;
+    left:  11%; 
+    right: 10%;
+  }
+
+  .imglist {
+    position: relative;
+    left:  16%; 
+    right: 10%;
+  }
+
+  .imgenlace {
+    position: relative;
+    left:  30%; 
+    right: 10%;
+  }
   
   #menupg  {
     list-style: none inside;
